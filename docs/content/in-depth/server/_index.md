@@ -113,6 +113,18 @@ public class TodoItemController : TableController<TodoItem>
 * The controller must inherit from `TableController<TEntity>`, where `<TEntity>` is an implementation of the `ITableData` implementation for your repository type.
 * Assign a repository based on the same type as your model.
 
+The official repositories allow you to specify how to generate an Id or Version when one is required.  These are not used if the data store generates suitable values (e.g. via a concurrency token).  To set the Id or Version generator, set the `IdGenerator` or `VersionGenerator` on the repository.  For example, if you were using the `EntityTableRepository`, you could use the following:
+
+```csharp
+// Use a ULID instead of a UUID; requires installing Ulid from NuGet.
+Repository.IdGenerator = _ => Ulid.NewUlid().ToString();
+
+// Use the binary conversion of the # ticks instead of a UUID for the version.
+Repository.VersionGenerator = () => BitConverter.ToBytes(DateTimeOffset.UtcNow.Ticks);
+```
+
+By default, a v4 UUID is used for both the Id and version when the data store does not manage them.
+
 ### Table controller options
 
 You can configure certain aspects of the controller using `TableControllerOptions`:
