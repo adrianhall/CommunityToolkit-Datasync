@@ -1,0 +1,29 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="CommunityToolkit.Datasync.Client" Version="8.0.3" />
+    <PackageVersion Include="CommunityToolkit.Datasync.Server" Version="8.0.3" />
+    <PackageVersion Include="CommunityToolkit.Datasync.Server.EntityFrameworkCore" Version="8.0.3" />
+    <PackageVersion Include="CommunityToolkit.Datasync.Server.NSwag" Version="8.0.3" />
+    <PackageVersion Include="CommunityToolkit.Datasync.Server.Swashbuckle" Version="8.0.3" />
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.3.0" />
+    <PackageVersion Include="CommunityToolkit.WinUI" Version="7.1.2" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Behaviors" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Converters" Version="8.0.240109" />
+    <PackageVersion Include="CommunityToolkit.WinUI.Helpers" Version="8.1.240916" />
+    <PackageVersion Include="CommunityToolkit.WinUI.UI.Behaviors" Version="7.1.2" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11" />
+    <PackageVersion Include="Microsoft.Extensions.Caching.Memory" Version="8.0.1" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
+    <PackageVersion Include="Microsoft.WindowsAppSDK" Version="1.5.240627000" />
+    <PackageVersion Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
+    <PackageVersion Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="2.0.9" />
+    <PackageVersion Include="System.Private.Uri" Version="4.3.2" />
+    <PackageVersion Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+</Project>

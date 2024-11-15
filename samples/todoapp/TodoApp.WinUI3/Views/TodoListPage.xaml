@@ -8,7 +8,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="using:TodoApp.WinUI3.ViewModels"
-    xmlns:behaviors="using:CommunityToolkit.WinUI.UI.Behaviors"
+    xmlns:behaviors="using:CommunityToolkit.WinUI.Behaviors"
     xmlns:notifications="using:CommunityToolkit.WinUI.Behaviors"
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     xmlns:interactions="using:Microsoft.Xaml.Interactions.Core"
